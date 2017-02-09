@@ -75,7 +75,7 @@ function track() {
         }
         event.runtime = 'nodejs';
 
-        var url = 'https://deployment-tracker.mybluemix.net/api/v1/track';
+        var url = 'https://deployment-tracker-server-dev.mybluemix.net/api/v1/track';
         restler.postJson(url, event).on('complete', function (data) {
             console.log('Uploaded stats', data);
         });
